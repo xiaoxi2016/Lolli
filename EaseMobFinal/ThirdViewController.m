@@ -23,6 +23,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     NSMutableArray *images = [NSMutableArray array];
     
+    
     for (int i = 6; i <= 10; i++) {
          [images addObject:[self createImage:[NSString stringWithFormat:@"%d.jpg", i]]];
     }
@@ -30,6 +31,7 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
     adScrollerView.delegate = self;
    [self.view addSubview:adScrollerView];
+    
     
 }
 - (void)didSelectImageAtInexPath:(NSInteger)indexPath{
